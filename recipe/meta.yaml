@@ -3,7 +3,7 @@ package:
   version: 1.0
 
 build:
-  number: 2
+  number: 3
   script:
     - cd {{ SP_DIR if SP_DIR is defined else '' }}
     - mkdir ruamel && cd ruamel
