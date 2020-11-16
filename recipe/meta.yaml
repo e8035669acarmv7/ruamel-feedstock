@@ -12,7 +12,7 @@ build:
     - python -c "import ruamel"
 
 requirements:
-  build:
+  host:
     - python
 
   run:
