@@ -5,14 +5,18 @@ package:
 build:
   number: 3
   script:
+    - set -x  # [unix]
     - cd {{ SP_DIR if SP_DIR is defined else '' }}
     - mkdir ruamel && cd ruamel
     - python -c "open('__init__.py', 'w').close()"
     - cd {{ SRC_DIR if SRC_DIR is defined else '' }}
-    - python -c "import ruamel"
+    - {{ PYTHON }} -c "import ruamel"   # [build_platform == target_platform]
 
 requirements:
   build:
+    - python
+
+  host:
     - python
 
   run:
@@ -26,7 +30,7 @@ about:
   home: http://github.com/conda-forge/ruamel-feedstock
   license: BSD 3-Clause
   license_family: BSD
-  license_file: {{ RECIPE_DIR if RECIPE_DIR is defined else '' }}/LICENSE.txt
+  license_file: LICENSE.txt
   summary: A package to ensure the `ruamel` namespace is available.
 
 extra:
