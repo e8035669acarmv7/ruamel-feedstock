@@ -5,11 +5,12 @@ package:
 build:
   number: 3
   script:
+    - set -x  # [unix]
     - cd {{ SP_DIR if SP_DIR is defined else '' }}
     - mkdir ruamel && cd ruamel
     - python -c "open('__init__.py', 'w').close()"
     - cd {{ SRC_DIR if SRC_DIR is defined else '' }}
-    - python -c "import ruamel"   # [build_platform != target_platform]
+    - python -c "import ruamel"   # [build_platform == target_platform]
 
 requirements:
   build:
