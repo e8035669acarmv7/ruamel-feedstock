@@ -3,7 +3,7 @@ package:
   version: 1.0
 
 build:
-  number: 4
+  number: 5
   script:
     - set -x  # [unix]
     - cd {{ SP_DIR if SP_DIR is defined else '' }}
@@ -28,7 +28,7 @@ test:
 
 about:
   home: http://github.com/conda-forge/ruamel-feedstock
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
   summary: A package to ensure the `ruamel` namespace is available.
