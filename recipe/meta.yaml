@@ -28,7 +28,7 @@ test:
 
 about:
   home: http://github.com/conda-forge/ruamel-feedstock
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
   summary: A package to ensure the `ruamel` namespace is available.
