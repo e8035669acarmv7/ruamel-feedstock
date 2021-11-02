@@ -3,7 +3,7 @@ About ruamel
 
 Home: http://github.com/conda-forge/ruamel-feedstock
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ruamel-feedstock/blob/master/LICENSE.txt)
 
