@@ -3,7 +3,7 @@ package:
   version: 1.0
 
 build:
-  number: 5
+  number: 6
   script:
     - set -x  # [unix]
     - cd {{ SP_DIR if SP_DIR is defined else '' }}
